@@ -4,7 +4,7 @@ import ReportScreen from "./ReportScreen";
 
 function App() {
     return (
-        <BrowserRouter basename="/game-chart/">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
                 <NavLink to="/" end style={{ marginRight: "1rem" }}>
                     Input
